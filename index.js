@@ -45,13 +45,7 @@ app.post('/delete/:filename', function(req, res) {
 app.post('/edit/:filename', function(req, res) {
     res.render('edit',{filename:req.params.filename});
 });
-// app.post('/edit', function(req, res) {
 
-//     fs.rename(`./files/${req.body.previous}`,`.files/${req.body.new}`,function(err){
-//         res.redirect("/");
-//     })
-//     // console.log(req.body);
-// });
 
 app.post('/edit', function (req, res) {
     const oldPath = path.join(__dirname, 'files', req.body.oldFilename);
@@ -74,3 +68,4 @@ app.post('/edit', function (req, res) {
 app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
+
