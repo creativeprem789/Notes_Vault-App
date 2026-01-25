@@ -2,6 +2,7 @@
 
 A simple and clean Notes Making web application built using **Node.js, Express, EJS, and Tailwind CSS**.  
 This app allows users to create, view, edit, and delete notes, which are stored locally as files.
+Live Link: https://notes-vault-app.onrender.com/
 
 ---
 
